@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="beleza.css">
+    <title>Biblioteca Juca Di Melo</title>
+</head>
+<body>
+
+    <h1>Bem-vindo à Biblioteca</h1>
+    <h1>Bem-vindo à Biblioteca Juca Di Melo</h1>
+
+    <h1>Nosso Acervo</h1>
+    <div id="acervo"></div>
+    
+
+    <h1>Adicionar Livro</h1>
+    <form class = "formulario_padrao" id="formulario" onsubmit="adicionarLivro(event)">
+        <input type="text" id="titulo" placeholder="Título" required>
+        <input type="text" id="autor" placeholder="Autor" required>
+        <input type="number" id="ano" placeholder="Ano" required>
+        <input type="text" id="genero" placeholder="Gênero" required>
+        <button type="submit">Adicionar</button>
+    </form>
+    <script>
+        window.onload = function() {
+            listarLivros(); // Chama a função para listar os livros quando a página é carregada
+        }
+    </script>
+    <script src="biblioteca.js"></script>
+
+</body>
